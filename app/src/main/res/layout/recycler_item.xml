@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/cardElevation"
+        app:cardCornerRadius="@dimen/MediumMargin"
+        android:layout_margin="@dimen/MediumMargin"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cardImageHeight"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/dogimage"
+                android:scaleType="centerCrop"
+                android:src="@drawable/test"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/smallMargin"
+                android:paddingStart="@dimen/MediumMargin"
+                android:text="@string/animal_name_goes_here"
+                android:textSize="@dimen/mediumText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivProfileImage" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/MediumMargin"
+                android:paddingEnd="@dimen/smallMargin"
+                android:paddingBottom="@dimen/smallMargin"
+                android:text="@string/adress_here_goes_the_address"
+                android:textSize="@dimen/smallText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+            <ImageView
+                android:id="@+id/ivPaw"
+                android:layout_width="67dp"
+                android:layout_height="59dp"
+                android:layout_below="@+id/ivProfileImage"
+                android:layout_marginStart="24dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/like_button"
+                android:maxHeight="@dimen/maxMargin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pawlogo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ivBone"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+                app:layout_constraintVertical_bias="0.502" />
+
+            <ImageView
+                android:id="@+id/ivBone"
+                android:layout_width="68dp"
+                android:layout_height="59dp"
+                android:layout_below="@+id/ivProfileImage"
+                android:layout_marginStart="16dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/like_button"
+                android:maxHeight="@dimen/maxMargin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bonesolid"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivPaw"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+                app:layout_constraintVertical_bias="0.502" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

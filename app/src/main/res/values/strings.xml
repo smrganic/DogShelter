@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Adoptr</string>
+    <string name="search">search</string>
+    <string name="enter_dog_breed">Enter dog breed</string>
+    <string name="profileimage">ProfileImage</string>
+    <string name="name_of_the_animal">Name of the animal</string>
+    <string name="address">Address</string>
+    <string name="dogimage">DogImage</string>
+    <string name="animal_name_goes_here">Animal name goes here</string>
+    <string name="adress_here_goes_the_address">Adress: here goes the address.</string>
+    <string name="like_button">like button</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+</resources>
